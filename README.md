@@ -1,4 +1,4 @@
-# <Título del proyecto> - <Año>
+# <Título del proyecto> - <2024>
 < Todo lo que esté entre llaves debe ser editado por ustedes y posteriormente eliminado>
 
 < Insertar una imagen del proyecto terminado, de vista general, como el que aparece abajo>
@@ -9,10 +9,9 @@
 ![Robot Ejemplo](/multimedia/robot_ejemplo.png)
 
 ## Integrantes
-- <Integrante 1> - < Facultad>
-- <Integrante 2> - < Facultad>
-- <Integrante 3> - < Facultad>
-- <Integrante 4> - < Facultad>
+- <Camila Cáceres T.> - < FCFM >
+- <Javier Ignacio Azócar> - < FCFM >
+- <Tomás Rajevic P.> - < FCFM >
 
 
 ## Descripción del proyecto
@@ -23,7 +22,7 @@
 < Explicar brevemente el arma utilizada.>
 
 #### Defensiva
-< Explicar el modo de defensa del robot.>
+< El robot se aprovecha.>
 
 ### Diagrama funcional
 < Diagrama de bloques general de funcionamiento. Se sugiere un esquema de sistemas, completo.>
