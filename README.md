@@ -1,7 +1,4 @@
 # <Título del proyecto> - <2024>
-< Todo lo que esté entre llaves debe ser editado por ustedes y posteriormente eliminado>
-
-< Insertar una imagen del proyecto terminado, de vista general, como el que aparece abajo>
 
 ### Historia del Battlebot
 < Contar la historia de vida de su battlebot.>
@@ -9,13 +6,13 @@
 ![Robot Ejemplo](/multimedia/robot_ejemplo.png)
 
 ## Integrantes
-- <Camila Cáceres T.> - < FCFM >
-- <Javier Ignacio Azócar> - < FCFM >
-- <Tomás Rajevic P.> - < FCFM >
+- Camila Cáceres T. -  FCFM 
+- Javier Ignacio Azócar -  FCFM 
+- Tomás Rajevic P. -  FCFM 
 
 
 ## Descripción del proyecto
-  
+  El robot de batalla se comunica a través de wifi, tiene una coraza con forma de iglú y cuenta con 3 ruedas omnidireccionales que permiten un desplazamiento amplio sin necesidad de rotación, además de un arma de resorte que empuja a los rivales al soltarse. Las ruedas, coraza y partes internas del arma fueron impresas en 3D.
 ### Estrategia utilizada
   
 #### Ofensiva
