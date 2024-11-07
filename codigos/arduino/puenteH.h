@@ -18,7 +18,7 @@ class puenteH{
     }
     
     //Lo único que necesitamos es darle la potencia que queremos al motor
-    void mover(int potencia){
+    void move(int potencia){
       //Solo si es positivo, prendemos el primer pin del puenteH
       digitalWrite(Pines_Puente[0], (potencia>0));
       //Solo si es negativo, prendemos el segundo pin del puenteH
