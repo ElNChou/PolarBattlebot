@@ -8,7 +8,7 @@ const char* ssid = "PolarTesting";
 const char* password = "elguantedeboxeo";
 
 WiFiServer server(80);
-
+//Esto es para detener el robot cuando no lo estemos usando
 bool encendido=false;
 
 //Inicializamos los 3 motores creando la una clase de "puenteH" para cada uno
@@ -24,13 +24,17 @@ puenteH Tail(16,1,2);
 const int arma=0;
 
 //Y por último las variables donde guardaremos el input de la app
-int joystick[2];
+//Esto guardará la intensidad que deben tener los 3 motores en un momento dado
+int joystick[3];
 
 
 //https://www.servomagazine.com/magazine/article/get-rolling-with-omni-directional-wheels
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
+  //Marcamos el arma como OUTPUT, los puenteH ya lo hacen por sí solos
+  pinMode(arma,OUTPUT);
+
   // Inicialización de WiFi
   WiFi.softAP(ssid, password);
   IPAddress IP = WiFi.softAPIP();
@@ -40,7 +44,7 @@ void setup() {
 }
 
 void loop() {
-  WiFiClient client = server.available();   // Espera una nueva conexión
+  WiFiClient client = server.available();   // Espera a recibir un comando
   if (!client) {
     return;
   }
@@ -48,56 +52,53 @@ void loop() {
   Serial.println("Cliente conectado");
   while(!client.available()){delay(1);}
   
-  //Lectura del comando, pero solo la parte que importa
+  //Lectura del comando, pero solo la parte que importa hasta el '/'
   String command = client.readStringUntil('/');
   command=client.readStringUntil('/');
   client.flush();
   Serial.print("Comando recibido: ");
   Serial.println(command);
 
-  
-
   //Chequeemos si estamos encendidos primero
-  //Si no estamos encendidos...
+  //Si NO estamos encendidos, nos encederemos en caso de recibir un 'E'
   if(!encendido){
-    //Si recibimos un E, encender el programa
     encendido=(command[0]=='E');
+  
+  //Si ya estamos encendidos, empezar la acción!!!
   }else{
-
-    //Si estamos encendidos, empezar la acción!!!
-    //Leer el comando recibido
+    //Interpretaremos el comando guardado en 'command'
     switch (command[0]) {
-     //Input de movimiento!!
+     //M = Input de movimiento!!
      case 'M':
-        //Leemos el componente x e y por separado
-        command=client.readStringUntil('/');
-        joystick[0]=command.toInt();
-        command=client.readStringUntil('/');
-        joystick[1]=command.toInt();
-        break;
-      
-      //Input de rotación!!
-      case 'R':
-        command=client.readStringUntil('/');
-        for(int i=0;i<4;i++)direccion[i] = (command[i]=='1');
-        puente1.cambiar(direccion);
+        //Leemos las nuevas intensidades para los motores que precalculó la aplicación muy amablemente
+        for(int i=0;i<3;i++){
+          command=client.readStringUntil('/');
+          joystick[i]=command.toInt();
+        }
+        
+        //Y actualizamos los motores
+        //Se reciben en el orden: Right,Left,Tail
+        Right.move(joystick[0]);
+        Left.move(joystick[1]);
+        Tail.move(joystick[2]);
         break;
 
-      //INPUT DE ATAQUE!!!
+      //A = INPUT DE ATAQUE!!!
       case 'A':
         analogWrite(arma,150);
         break;
 
-      //input de detener ataque...
+      //S = input de detener ataque...
       case 'S':
         digitalWrite(arma,0);
         break;
 
+      //X = volver a apagar (estado inicial)
       case 'X':  // Apagar
         digitalWrite(arma,0);
-        Right.mover(0);
-        Left.mover(0);
-        Tail.mover(0);
+        Right.move(0);
+        Left.move(0);
+        Tail.move(0);
         encendido=false;
         break;
     }
