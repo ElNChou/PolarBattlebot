@@ -25,13 +25,14 @@ Su extenuante búsqueda lo trajo a la competencia de battlebots, en donde pondr�
 ### Estrategia utilizada
   
 #### Ofensiva
-< Explicar brevemente el arma utilizada.>
+El arma es un palo unido a un resorte, que acumula tensión y se suelta, realizando un empuje muy poderoso para lograr enviar a otra gente hacia el acantilado...
 
 #### Defensiva
-< El robot se aprovecha.>
+La defensa del robot viene dada por su corteza, ya que al ser una semi esfera dificulta recibir golpes perpendiculares directos, estos se deflectan ligeramente al no golpear una superficie plana. Además tiene un desplazamiento omnidireccional, el cual facilita aprovechar los ángulos de su coraza y esquivar ataques o reposicionarse sin necesidad de rotar.
 
 ### Diagrama funcional
 < Diagrama de bloques general de funcionamiento. Se sugiere un esquema de sistemas, completo.>
+//No alcanzamos a entender esto
 
 ## Licencia
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Licencia Creative Commons Atribución-NoComercial 4.0 Internacional</a>.
