@@ -1,7 +1,14 @@
-# <Título del proyecto> - <2024>
+# PinguBot - 2024
 
 ### Historia del Battlebot
-< Contar la historia de vida de su battlebot.>
+Los climas helados son muy castigadores. No solo por todas las dificultades que presenta sobrevivir a temperaturas extremas, si no que también por lo gente que aparece por estos lugares sin prepararse. Estas personas son lentamente consumidas por el frío insoportable hasta lo más profundo de su ser, haciéndoles perder el interés por la cosas y la bondad. Esto es algo que Pingu sabe muy bien, pues ha sido víctima de un acto de crueldad solo posible con alguien de frío corazón.
+
+En uno de sus paseos rutinarios con su querida madre, Pingu se alejó demasiado y se perdió por la montaña helada en que se encontraban explorando, pero encontró a un humano extremadamente amable que lo encontró. Sin esperar nada a cambio, este humano lo llevó en brazos hasta llevarlo de vuelta con su admirada guardiana, pero justo antes de que pudieran darle las gracias, este individuo cambió completamente de parecer y arrojó a Pingu al acantilado, enfrente de su madre.
+
+Tras este acto completamente repentino, Pingu cayó mientras escuchaba a lo lejos los ruidos que su furiosa madre hacía, desvaneciéndose lentamente... pero con una caída estratégica logró sobrevivir. Con esto aprendió a nunca más confiar en extraños, pues no se podía creer que alguien fuera capaz hacer algo así.
+Tras este suceso, nuestra ave caída decidió nunca más salir de su iglú, y convertirlo en un tanque de guerra que lo protegiese, con el que se adentraría en la sociedad humana buscando a este malhechor.
+
+Su extenuante búsqueda lo trajo a la competencia de battlebots, en donde pondrá a prueba sus habilidades y la resistencia de su querido transporte, con el que tantos viajes ha compartido.
   
 ![Robot Ejemplo](/multimedia/robot_ejemplo.png)
 
