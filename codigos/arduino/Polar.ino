@@ -1,5 +1,6 @@
 //traducción de pines
 //const int D0=16,D1=5,D2=4,D3=0,D4=2,D5=14,D6=12,D7=13,D8=15,RX=3,TX=1,SD3=10,SD2=9;
+//^ Esto indica que tenemos todos los pines del 0-
 using namespace std;
 //***********************************************
 #include <ESP8266WiFi.h>
@@ -16,8 +17,8 @@ bool encendido=false;
 puenteH Right(14,12,15);
 //D2,D1,D7
 puenteH Left(4,5,13);
-//D0,TX,D4
-puenteH Tail(16,1,2);
+//D0,SD2,D4
+puenteH Tail(16,9,2);
 
 
 //También declaramos el pin donde está el arma, D3
