@@ -2,8 +2,6 @@
 
 Se deben subir:
 - Fotos de avance (en orden cronológico)
-- Foto del proyecto terminado
-- Vídeo de demostración/funcionamiento
 
 ![Imagen](/multimedia/1inspiraciones.png)
 
@@ -42,5 +40,3 @@ Se deben subir:
 ![Imagen](/multimedia/17PosiciónArma.jpg)
 
 ![Imagen](/multimedia/18Todojuntito.jpg)
-
-Se sugiere subir todas las imágenes y vídeos a esta carpeta y linkearlos desde acá para otros archivos. 
