@@ -21,7 +21,7 @@ Su extenuante búsqueda lo trajo a la competencia de battlebots, en donde pondr�
 
 
 ## Descripción del proyecto
-  El robot de batalla se comunica a través de wifi, tiene una coraza con forma de iglú y cuenta con 3 ruedas omnidireccionales que permiten un desplazamiento amplio sin necesidad de rotación, además de un arma de resorte que empuja a los rivales al soltarse. Las ruedas, coraza y partes internas del arma fueron impresas en 3D.
+  El robot de batalla se comunica a través de wifi, tiene una coraza con forma de iglú y cuenta con 3 ruedas omnidireccionales que permiten un desplazamiento amplio sin necesidad de rotación, además de un arma de resorte que empuja a los rivales al soltarse. Las ruedas, coraza y partes internas del arma fueron impresas en 3D y la base fue procesada en una máquina CNC.
 ### Estrategia utilizada
   
 #### Ofensiva
