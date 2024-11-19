@@ -5,7 +5,7 @@ Se deben subir:
 - Foto del proyecto terminado
 - Vídeo de demostración/funcionamiento
 
-![Imagen Ilustrativa](/multimedia/1 Primeras inspiraciones.png)
+![Imagen Ilustrativa](/multimedia/"1 Primeras inspiraciones.png")
 
 ![Imagen Ilustrativa](/multimedia/2 Prototipo Humilde.png)
 
