@@ -5,5 +5,5 @@ Se deben subir:
 - Foto del proyecto terminado
 - Vídeo de demostración/funcionamiento
 
-![Imagen Ilustrativa](1Primerasinspiraciones.png)
+![Imagen](inspiraciones.png)
 Se sugiere subir todas las imágenes y vídeos a esta carpeta y linkearlos desde acá para otros archivos. 
