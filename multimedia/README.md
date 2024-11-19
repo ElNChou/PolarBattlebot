@@ -6,7 +6,5 @@ Se deben subir:
 - Vídeo de demostración/funcionamiento
 
 ![Imagen](/multimedia/1inspiraciones.png)
-![Imagen](multimedia/1inspiraciones.png)
-![Imagen](/1inspiraciones.png)
 
 Se sugiere subir todas las imágenes y vídeos a esta carpeta y linkearlos desde acá para otros archivos. 
