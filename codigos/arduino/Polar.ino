@@ -1,9 +1,9 @@
 //traducción de pines
 //const int D0=16,D1=5,D2=4,D3=0,D4=2,D5=14,D6=12,D7=13,D8=15,RX=3,TX=1,SD3=10,SD2=9;
-//^ Esto indica que tenemos todos los pines del 0-
 using namespace std;
 //***********************************************
 #include <ESP8266WiFi.h>
+#include <Servo.h>
 #include "puenteH.h"
 const char* ssid = "PolarTesting";
 const char* password = "elguantedeboxeo";
@@ -14,15 +14,19 @@ bool encendido=false;
 
 //Inicializamos los 3 motores creando la una clase de "puenteH" para cada uno
 //D5,D6,D8
-puenteH Right(14,12,15);
+puenteH Right(12,14,15);
 //D2,D1,D7
 puenteH Left(4,5,13);
 //D0,SD2,D4
 puenteH Tail(16,9,2);
 
 
-//También declaramos el pin donde está el arma, D3
-const int arma=0;
+//También declaramos el pin donde está el arma, SD2
+const int PinArma=9;
+//Activa esta flag si estás usando un servo en vez de un motor
+//Esto lo implementamos porque nuestro motor estaba malo :( xd
+bool usarServo=false;
+Servo arma;
 
 //Y por último las variables donde guardaremos el input de la app
 //Esto guardará la intensidad que deben tener los 3 motores en un momento dado
@@ -32,15 +36,12 @@ int joystick[3];
 //https://www.servomagazine.com/magazine/article/get-rolling-with-omni-directional-wheels
 
 void setup() {
-  Serial.begin(9600);
   //Marcamos el arma como OUTPUT, los puenteH ya lo hacen por sí solos
-  pinMode(arma,OUTPUT);
-
+  if(usarServo)arma.attach(PinArma);
+  else pinMode(PinArma,OUTPUT);
   // Inicialización de WiFi
   WiFi.softAP(ssid, password);
   IPAddress IP = WiFi.softAPIP();
-  Serial.print("AP IP address: ");
-  Serial.println(IP);
   server.begin();
 }
 
@@ -50,15 +51,12 @@ void loop() {
     return;
   }
 
-  Serial.println("Cliente conectado");
   while(!client.available()){delay(1);}
   
   //Lectura del comando, pero solo la parte que importa hasta el '/'
   String command = client.readStringUntil('/');
   command=client.readStringUntil('/');
   client.flush();
-  Serial.print("Comando recibido: ");
-  Serial.println(command);
 
   //Chequeemos si estamos encendidos primero
   //Si NO estamos encendidos, nos encederemos en caso de recibir un 'E'
@@ -86,17 +84,26 @@ void loop() {
 
       //A = INPUT DE ATAQUE!!!
       case 'A':
-        analogWrite(arma,150);
+        if(usarServo)arma.write(0);
+        else digitalWrite(PinArma,1);
         break;
 
       //S = input de detener ataque...
       case 'S':
-        digitalWrite(arma,0);
+        if(usarServo)arma.write(180);
+        else digitalWrite(PinArma,0);
+        break;
+
+      //test servo
+      case 'T':
+        command=client.readStringUntil('/');
+        arma.write(command.toInt());
         break;
 
       //X = volver a apagar (estado inicial)
       case 'X':  // Apagar
-        digitalWrite(arma,0);
+        if(usarServo)arma.write(0);
+        else digitalWrite(PinArma,0);
         Right.move(0);
         Left.move(0);
         Tail.move(0);
@@ -106,5 +113,4 @@ void loop() {
   }
   //Apagamos el cliente para eliminar los datos basura restantes
   client.stop();
-  Serial.println("Cliente desconectado");
 }
