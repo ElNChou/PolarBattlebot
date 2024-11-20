@@ -1,7 +1,11 @@
 //traducción de pines
 //const int D0=16,D1=5,D2=4,D3=0,D4=2,D5=14,D6=12,D7=13,D8=15,RX=3,TX=1,SD3=10,SD2=9;
 using namespace std;
-//***********************************************
+//*******IMPORTANTE*********
+//Cambia esta flag a "true" si estás usando un servo en vez de un motor DC.
+//Esto lo implementamos porque nuestro motor estaba malo :( xd
+bool usarServo=false;
+
 #include <ESP8266WiFi.h>
 #include <Servo.h>
 #include "puenteH.h"
@@ -23,9 +27,6 @@ puenteH Tail(16,9,2);
 
 //También declaramos el pin donde está el arma, SD2
 const int PinArma=9;
-//Activa esta flag si estás usando un servo en vez de un motor
-//Esto lo implementamos porque nuestro motor estaba malo :( xd
-bool usarServo=false;
 Servo arma;
 
 //Y por último las variables donde guardaremos el input de la app
