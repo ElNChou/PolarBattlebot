@@ -29,7 +29,7 @@ El arma es un palo que tiene espuma en la punta, unido a un resorte que acumula 
 Debido a problemas técnicos con el motor que usaba para esto (¡resultó estar malo!), se cambió por un servomotor a último momento tal que solo moviera el arma para farmear puntos.
 
 #### Defensiva
-La defensa del robot viene dada por su corteza, ya que al ser una semi esfera dificulta recibir golpes directos pues se deflectan ligeramente al no golpear una superficie plana. Además tiene un desplazamiento omnidireccional, el cual facilita aprovechar los ángulos de su coraza y esquivar ataques o reposicionarse sin necesidad de frenarse al rotar.
+La defensa del robot viene dada por su corteza, ya que al ser una semi esfera dificulta recibir golpes directos pues se deflectan ligeramente al no golpearse contra una superficie plana. Además tiene un desplazamiento omnidireccional, el cual facilita aprovechar los ángulos de su coraza y esquivar ataques o reposicionarse sin necesidad de frenarse al rotar.
 
 ### Diagrama funcional
 ![Robot Ejemplo](/multimedia/FuncionamientoRobotSimple.png)
