@@ -1,7 +1,6 @@
 # Código de la Aplicación
 
-< Subir imagen y descripción de _layout_ de la aplicación.>
-
-< Subir archivo **.aia** de la aplicación a esta carpeta.>
+Aquí se encuentra la aplicación con la que se controla al robot.
+Está el instalador apk, una foto del diagrama de bloques y el proyecto de appinventor ai
 
 
