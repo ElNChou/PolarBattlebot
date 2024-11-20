@@ -1,5 +1,5 @@
 # Códigos Arduino
-El código de este robot tiene dos archivos, el archivo 'puenteH' contiene una clase que nos permite mover un motor solo llamando a 'motor.move(valor)', el cual acepta valores positivos y negativos. Polar.ino es el código principal que permite la conexión a la aplicación.
+El código de este robot tiene dos archivos, el archivo 'puenteH' contiene una clase que nos permite mover un motor solo llamando a 'motor.move(valor)', el cual puede interpretar la dirección del movimiento a partir del signo del número que recibe. Polar.ino es el código principal que permite la conexión a la aplicación y requiere tener "puente.h" en la carpeta del proyecto..
 
 Asegúrate que los pines coincidan con los del programa:
 
