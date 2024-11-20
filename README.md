@@ -32,7 +32,7 @@ Debido a problemas técnicos con el motor que usaba para esto (¡resultó estar 
 La defensa del robot viene dada por su corteza, ya que al ser una semi esfera dificulta recibir golpes directos pues se deflectan ligeramente al no golpear una superficie plana. Además tiene un desplazamiento omnidireccional, el cual facilita aprovechar los ángulos de su coraza y esquivar ataques o reposicionarse sin necesidad de frenarse al rotar.
 
 ### Diagrama funcional
-< Diagrama de bloques general de funcionamiento. Se sugiere un esquema de sistemas, completo.>
+![Robot Ejemplo](/multimedia/FuncionamientoRobotSimple.png)
 
 
 ## Licencia
