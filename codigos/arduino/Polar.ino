@@ -21,12 +21,12 @@ bool encendido=false;
 puenteH Right(12,14,15);
 //D2,D1,D7
 puenteH Left(4,5,13);
-//D0,SD2,D4
-puenteH Tail(16,9,2);
+//D0,SD2,D3
+puenteH Tail(16,9,0);
 
 
-//También declaramos el pin donde está el arma, SD2
-const int PinArma=9;
+//También declaramos el pin donde está el arma, D4
+const int PinArma=2;
 Servo arma;
 
 //Y por último las variables donde guardaremos el input de la app
