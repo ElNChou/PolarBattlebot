@@ -12,7 +12,7 @@ Tras este suceso, nuestra ave caída decidió nunca más salir de su iglú, y co
 
 Su extenuante búsqueda lo trajo a la competencia de battlebots, en donde pondrá a prueba sus habilidades y la resistencia de su querido transporte, con el que tantos viajes ha compartido.
   
-![Robot Ejemplo](/multimedia/18Todojuntito.jpg)
+![Robot Ejemplo](/multimedia/Pingubot_logo_FCFM.pdf)
 
 ## Integrantes
 - Camila Cáceres T. -  FCFM 
